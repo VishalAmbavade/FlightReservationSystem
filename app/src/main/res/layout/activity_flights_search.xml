@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlightsSearch">
+
+    <!--<ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>-->
+
+    <LinearLayout
+        android:id="@+id/flightSearchlinear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/flightSearchSour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Source"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/flightSearchDest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Destination"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/flightSearchbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flightSearchlinear1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Search"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/flightSearchbtn1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerView" />
+
+
+</RelativeLayout>

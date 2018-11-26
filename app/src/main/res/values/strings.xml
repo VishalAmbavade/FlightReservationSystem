@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Flight Reservation</string>
+    <string name="title_activity_flights">flights</string>
+    <string name="Rs">\u20B9</string>
+</resources>

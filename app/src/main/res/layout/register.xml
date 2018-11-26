@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/et_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_name"
+        android:layout_below="@+id/et_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Surname" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_name"
+        android:layout_below="@+id/et_surname"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="age" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_name"
+        android:layout_below="@+id/et_age"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="username" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_name"
+        android:layout_below="@+id/et_username"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="password" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:onClick="OnReg" />
+
+</RelativeLayout>
