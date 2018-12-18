@@ -1,8 +1,10 @@
 package com.example.vishal.flightreservation;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -21,6 +23,11 @@ public class MenuActivity extends AppCompatActivity {
         btnAirlines = findViewById(R.id.btnAirlines);
         textViewName = findViewById(R.id.textViewName);
         btnSearchFlights = findViewById(R.id.btnSearchFlights);
+
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String userName = sharedPreferences.getString("name", null);
+
+        textViewName.setText(userName);
 
 
         btnFlights.setOnClickListener(new View.OnClickListener() {

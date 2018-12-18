@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/lightback"
     tools:context=".MenuActivity">
 
     <TextView
@@ -11,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="86dp"
         android:text="Hello"
         android:textSize="24sp" />
 
@@ -21,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="136dp"
         android:text="Vishal"
         android:textSize="30sp" />
 
@@ -30,19 +31,23 @@
         android:id="@+id/btnFlights"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnSearchFlights"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:text="See all flights" />
+        android:layout_marginTop="230dp"
+        android:background="@drawable/rec_gradient"
+        android:text="See all flights"
+        android:textColor="#ffffff" />
 
     <Button
         android:id="@+id/btnAirlines"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnFlights"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="230dp"
-        android:text="see all airlines" />
+        android:layout_marginTop="320dp"
+        android:background="@drawable/rec_gradient"
+        android:text="see all airlines"
+        android:textColor="#ffffff" />
 
     <Button
         android:id="@+id/btnSearchFlights"
@@ -50,17 +55,21 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="310dp"
-        android:text="Search flights" />
+        android:layout_marginTop="410dp"
+        android:background="@drawable/rec_gradient"
+        android:text="Search flights"
+        android:textColor="#ffffff" />
 
-    <Button
+    <!--<Button
         android:id="@+id/button9"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/rec_gradient"
+        android:textColor="#ffffff"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="390dp"
-        android:text="Not assigned" />
+        android:text="Not assigned" />-->
 
 
 </RelativeLayout>

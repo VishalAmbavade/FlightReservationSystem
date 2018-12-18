@@ -1,66 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register">
 
-    <EditText
-        android:id="@+id/et_name"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Name" />
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="Sign Up"
+        android:textSize="30sp" />
 
-    <EditText
-        android:id="@+id/et_surname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/et_name"
-        android:layout_below="@+id/et_name"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Surname" />
 
-    <EditText
-        android:id="@+id/et_age"
-        android:layout_width="wrap_content"
+    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:id="@+id/passName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/et_name"
-        android:layout_below="@+id/et_surname"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="age" />
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:focusable="false"
+        app:errorColor="@color/A400red"
+        app:hasClearButton="true"
+        app:labelText="First name"
+        app:manualValidateError="true"
+        app:panelBackgroundColor="#fff"
+        app:primaryColor="#f56217"
+        app:secondaryColor="#000">
 
-    <EditText
-        android:id="@+id/et_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/et_name"
-        android:layout_below="@+id/et_age"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="username" />
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
+    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
-    <EditText
-        android:id="@+id/et_password"
-        android:layout_width="wrap_content"
+    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/et_name"
-        android:layout_below="@+id/et_username"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="password" />
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:focusable="false"
+        app:errorColor="@color/A400red"
+        app:hasClearButton="true"
+        app:labelText="Last name"
+        app:manualValidateError="true"
+        app:panelBackgroundColor="#fff"
+        app:primaryColor="#f56217"
+        app:secondaryColor="#000">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+            android:id="@+id/et_surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
+    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+
+    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:focusable="false"
+        app:errorColor="@color/A400red"
+        app:hasClearButton="true"
+        app:labelText="Enter your age"
+        app:manualValidateError="true"
+        app:panelBackgroundColor="#fff"
+        app:primaryColor="#f56217"
+        app:secondaryColor="#000">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+            android:id="@+id/et_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
+    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+
+    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:focusable="false"
+        app:errorColor="@color/A400red"
+        app:hasClearButton="true"
+        app:labelText="Username"
+        app:manualValidateError="true"
+        app:panelBackgroundColor="#fff"
+        app:primaryColor="#f56217"
+        app:secondaryColor="#000">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+            android:id="@+id/et_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
+    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+
+    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:focusable="false"
+        app:errorColor="@color/A400red"
+        app:hasClearButton="true"
+        app:labelText="password"
+        app:manualValidateError="true"
+        app:panelBackgroundColor="#fff"
+        app:primaryColor="#f56217"
+        app:secondaryColor="#000">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+            android:id="@+id/et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
+    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
     <Button
         android:id="@+id/btn_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/et_password"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="24dp"
-        android:layout_centerHorizontal="true"
+        android:background="#303F9F"
+        android:onClick="OnReg"
         android:text="Submit"
-        android:onClick="OnReg" />
-</RelativeLayout>
+        android:textColor="#ffffff" />
+
+</LinearLayout>
+
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/et_surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_name"
+            android:layout_below="@+id/et_name"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Surname" />
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_name"
+            android:layout_below="@+id/et_surname"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="age" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_name"
+            android:layout_below="@+id/et_age"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="username" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_name"
+            android:layout_below="@+id/et_username"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="password" />
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_password"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:onClick="OnReg" />
+    </RelativeLayout>-->

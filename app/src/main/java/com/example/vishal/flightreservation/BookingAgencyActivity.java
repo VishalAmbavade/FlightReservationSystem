@@ -1,9 +1,9 @@
 package com.example.vishal.flightreservation;
 
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -108,8 +108,9 @@ public class BookingAgencyActivity extends AppCompatActivity {
                                 String travelAgency = BookingAgencyObject.getString("ta_name");
                                 int price = BookingAgencyObject.getInt("ticketPrice");
                                 String image = BookingAgencyObject.getString("agencyimage");
+                                int totalSeats = BookingAgencyObject.getInt("totalSeats");
 
-                                BookingAgency book = new BookingAgency(travelAgency, price, image);
+                                BookingAgency book = new BookingAgency(travelAgency, price, image, totalSeats);
 
                                 bookingAgenciesList.add(book);
                             }

@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -68,12 +67,14 @@ public class FlightsAdapter extends RecyclerView.Adapter<FlightsAdapter.FlightsV
                 editor.putString("destination", flights.getDest());
                 editor.putString("sourceCode", flights.getSourCode());
                 editor.putString("destinationCode", flights.getDestCode());
+                editor.putString("arrival_time", flights.getArr_time());
+                editor.putString("dept_time", flights.getDept_time());
 
                 editor.apply();
                 //String airline = sharedPreferences.getString("airline", "NULL");
 
 
-                Toast.makeText(mCtx, "Work under progress", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mCtx, "Work under progress", Toast.LENGTH_SHORT).show();
             }
         });
     }

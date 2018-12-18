@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +26,10 @@
         <activity android:name=".AirlinesActivity" />
         <activity android:name=".BookingAgencyActivity" />
         <activity android:name=".MenuActivity" />
-        <activity android:name=".FlightsSearch"></activity>
+        <activity android:name=".FlightsSearch" />
+        <activity android:name=".PassengerDetailsActivity" />
+        <activity android:name=".TicketConfirmation" />
+        <activity android:name=".FinishActivity"></activity>
     </application>
 
 </manifest>

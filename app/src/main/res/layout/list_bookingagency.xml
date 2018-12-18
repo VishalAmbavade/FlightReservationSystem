@@ -2,12 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
+
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp">
+        android:layout_margin="8dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="8dp">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -24,6 +28,7 @@
             android:src="@drawable/expedia" />
 
         <LinearLayout
+            android:id="@+id/ll1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
@@ -38,17 +43,60 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/pricestextViewPrice"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="68000"
-                android:textSize="22sp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/Rs"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/pricestextViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="8dp"
+                    android:text="68000"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/totalSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Availability: " />
+
+        <Button
+            android:id="@+id/btnbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:background="#303F9F"
+            android:minHeight="0dp"
+            android:padding="8dp"
+            android:text="book now"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
     </RelativeLayout>
+
+
     </android.support.v7.widget.CardView>
+
+
 </LinearLayout>
 
 

@@ -3,6 +3,11 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
+        <entry key="imageWizard">
+          <value>
+            <PersistentState />
+          </value>
+        </entry>
         <entry key="vectorWizard">
           <value>
             <PersistentState>
@@ -18,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/D:/Softwares/Android_Studio/Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_lock_open_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/D:/Softwares/Android_Studio/Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_flight_land_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +33,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_lock_open" />
+                            <entry key="color" value="f56217" />
+                            <entry key="outputName" value="ic_dest" />
                             <entry key="sourceFile" value="C:\Users\Vishal" />
                           </map>
                         </option>

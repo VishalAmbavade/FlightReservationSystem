@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Flight Reservation</string>
-    <string name="title_activity_flights">flights</string>
     <string name="Rs">\u20B9</string>
+
+    <string-array name="classes">
+        <item>Economy</item>
+        <item>Business</item>
+        <item>First</item>
+    </string-array>
+
+    <string-array name="seats">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 </resources>

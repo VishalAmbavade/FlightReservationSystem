@@ -47,6 +47,7 @@
             android:id="@+id/etUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:singleLine="true"
             android:drawableRight="@drawable/ic_person"
             android:drawablePadding="20dp"
             android:hint="123" />
@@ -61,8 +62,10 @@
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:drawableRight="@drawable/ic_lock_open"
             android:drawablePadding="20dp"
+            android:singleLine="true"
             android:hint="123" />
     </LinearLayout>
 

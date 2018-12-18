@@ -2,12 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp">
+        android:layout_margin="8dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="8dp">
 
         <RelativeLayout
             android:id="@+id/relativeLayout"
@@ -155,9 +158,6 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
             </LinearLayout>
-
-
-
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
@@ -175,8 +175,6 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:scrollbarStyle="outsideOverlay"/>
-
-
 
         <android.support.v7.widget.RecyclerView
             android:layout_height="match_parent"
